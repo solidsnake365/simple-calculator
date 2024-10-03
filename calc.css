@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Use 100vh for full viewport height */
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('magic-g1db898374_1920.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px); /* Apply blur to the background */
+    z-index: -1; /* Send the background behind everything */
+}
+
+button{
+    padding:20px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    opacity: 100;
+
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr) ;
+}
+#display{
+    width:100%;
+    height: 35px;
+    border-radius: 10px;
+    border: solid;
+    color: black;
+    font-size: large;
+}
+.calculator{
+    border-radius: 5px;
+    padding: 10px;
+    border: grey solid;
+    z-index: 10;
+}
+button:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
